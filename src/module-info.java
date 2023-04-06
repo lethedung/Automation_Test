@@ -1,0 +1,2 @@
+module Kaopiz_Test {
+}
