@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SauceDemo">
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+	</listeners>
+
+	<parameter name="saucedemoUrl" value="https://www.saucedemo.com/" />
+	<test name="Run On FIREFOX">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.saucedemo.Level_19_Sort_Data" />
+		</classes>
+	</test>
+
+</suite>

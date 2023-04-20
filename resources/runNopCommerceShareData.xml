@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NopCommerce - User">
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.AllureTestListener" />
+	</listeners>
+
+	<test name="Run On CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.nopcommerce.common.Common_01_Register_Cookie" />
+			<class name="com.nopcommerce.user.Level_16_Share_Data_C" />
+		</classes>
+	</test>
+
+</suite>

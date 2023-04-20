@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NopCommerce - User">
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.ReportNGListener" />
+		<!-- <listener class-name="reportConfig.ExtentTestListener" />
+		<listener class-name="reportConfig.AllureTestListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
+	</listeners>
+
+	<parameter name="urlAdmin" value="https://naunem.com/wp-admin/" />
+	<parameter name="urlEndUser" value="https://naunem.com/" />
+
+	<test name="Run On FIREFOX">
+		<parameter name="browser" value="firefox" />
+		<!-- <classes>
+			<class name="com.nopcommerce.user.Level_15_Allure" />
+		</classes>
+		-->
+
+		<packages>
+			<package name="com.wordpress.admin" />
+		</packages>
+	</test>
+
+</suite>
